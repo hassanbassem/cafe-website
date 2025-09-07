@@ -103,6 +103,7 @@ h2 {
     font-family: var(--big-font);
     font-weight: var(--big-font-weight);
     text-align: center;
+    font-size: 1.7em;
 }
 
 .container {
@@ -150,4 +151,35 @@ h3 {
 
 section button {
     font-size: 1em;
+}
+
+.why-choose-us {
+    background-color: white;
+    color: #926e4d;
+}
+
+.why-choose-us h2 {
+    color: #926e4d;
+}
+
+.icons {
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6em;
+    margin: 3em auto;
+}
+
+.icon {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.icon img {
+    width: 60%;
+    margin: auto;
+}
+
+.icon h3 {
+    font-size: 1.4em;
 }
