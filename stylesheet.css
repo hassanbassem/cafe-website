@@ -235,3 +235,42 @@ section button {
 .reverse::after {
     right: 94%;
 }
+
+footer {
+    background-color: var(--brown);
+    display: flex;
+    padding: 2em;
+    color: white;
+    font-family: var(--small-font);
+    font-size: 1.2em;
+}
+
+iframe {
+    border-radius: 6px;
+    flex-grow: 1;
+}
+
+footer li {
+    margin-bottom: 2em;
+}
+
+.social img {
+    width: 15%;
+    display: inline;
+}
+
+footer ul:first-of-type li:first-child {
+    margin-bottom: 3em;
+}
+
+footer ul:first-of-type {
+    flex-basis: 30%;
+}
+
+footer ul:nth-of-type(2){
+    flex-basis: 10%;
+}
+
+footer ul:last-child {
+    flex-basis: 20%;
+}
