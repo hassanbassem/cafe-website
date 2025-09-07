@@ -93,7 +93,7 @@ button:hover {
 
 .header-text {
     position: absolute;
-    top: 35%;
+    bottom: 40%;
     left: 30%;
 }
 
@@ -183,10 +183,11 @@ section button {
 }
 
 .icons {
-    width: 50%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5em;
+    max-width: 40em;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 10em));
+    gap: 4em;
     margin: 3em auto 0;
 }
 
@@ -202,7 +203,7 @@ section button {
 }
 
 .icon h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .what-our-happy-customers-say {
@@ -317,7 +318,7 @@ footer ul:last-child {
 @media (max-width: 650px) {
     .menu-items {
         flex-wrap: wrap;
-        width: 60%;
+        width: 70%;
         align-items: stretch;
         margin: 2em auto;
         gap: 2em;
@@ -334,7 +335,7 @@ footer ul:last-child {
     .mobile {
         display: flex;
         justify-content: space-between;
-        background-color: brown;
+        background-color: var(--brown);
         height: 10%;
         padding: 0.5em 1em;
         opacity: 0.7;
@@ -351,7 +352,7 @@ footer ul:last-child {
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        background-color: brown;
+        background-color: var(--brown);
         opacity: 0.7;
         margin: 0;
         font-size: 1.5em;
@@ -380,7 +381,7 @@ footer ul:last-child {
     .header-text {
         width: 90%;
         left: 5%;
-        top: 62%;
+        bottom: 5%;
     }
 
     h1 {
@@ -399,5 +400,9 @@ footer ul:last-child {
 
     nav li {
         padding: 1em 0;
+    }
+
+    footer ul:nth-of-type(2){
+        display: none;
     }
 }
