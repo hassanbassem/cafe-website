@@ -5,7 +5,9 @@
     --big-font: "Jersey 25", sans-serif;
     --big-font-weight: 400;
     --small-font: "BenchNine", sans-serif;
+    --review-font: "Berkshire Swash", serif;
     --brown: #602817;
+    --coffee: #926e4d;
 }
 
 body {
@@ -155,19 +157,19 @@ section button {
 
 .why-choose-us {
     background-color: white;
-    color: #926e4d;
+    color: var(--coffee);
 }
 
 .why-choose-us h2 {
-    color: #926e4d;
+    color: var(--coffee);
 }
 
 .icons {
     width: 50%;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 6em;
-    margin: 3em auto;
+    gap: 5em;
+    margin: 3em auto 0;
 }
 
 .icon {
@@ -182,4 +184,54 @@ section button {
 
 .icon h3 {
     font-size: 1.4em;
+}
+
+.what-our-happy-customers-say {
+    background-color: #F6F0EB;
+}
+
+.reviews {
+    flex-direction: column;
+    gap: 2em;
+}
+
+.review {
+    display: flex;
+    width: 90%;
+    position: relative;
+}
+
+.review img {
+    width: 20%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.review p {
+    font-family: var(--review-font);
+    font-weight: 400;
+    color: var(--coffee);
+    font-size: 2em;
+}
+
+.reverse {
+    align-self: flex-end;
+}
+
+.rtl img {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.review::after {
+    content: "\"";
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    font-size: 5em;
+    font-family: var(--review-font);
+    color: var(--coffee);
+    opacity: 0.5;
+}
+
+.reverse::after {
+    right: 94%;
 }
