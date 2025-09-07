@@ -180,6 +180,7 @@ section button {
 .icon img {
     width: 60%;
     margin: auto;
+    margin-bottom: 1em;
 }
 
 .icon h3 {
