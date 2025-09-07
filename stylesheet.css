@@ -67,6 +67,12 @@ button {
     border-radius: 6px;
 }
 
+button:hover {
+    background-color: var(--brown);
+    color: white;
+    cursor: pointer;
+}
+
 header div {
     position: absolute;
     top: 35%;
