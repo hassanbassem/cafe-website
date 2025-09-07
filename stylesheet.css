@@ -41,6 +41,12 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav li:hover {
+    cursor: pointer;
+    color: #dac1b0;
 }
 
 nav img {
