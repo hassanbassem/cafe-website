@@ -257,6 +257,7 @@ footer li {
 .social img {
     width: 15%;
     display: inline;
+    margin: 0.25em;
 }
 
 footer ul:first-of-type li:first-child {
