@@ -20,6 +20,10 @@ rel="stylesheet">
 </head>
 <body>
     <header>
+        <div class="mobile">
+            <img src="images/logo.png" alt="logo">
+            <img id="burger-menu" src="images/burger-menu-icon.png" alt="burger menu">
+        </div>
         <nav>
             <li>Gallery</li>
             <li>About</li>
@@ -27,29 +31,29 @@ rel="stylesheet">
             <li>Menu</li>
             <li>Contact us</li>
         </nav>
-        <div>
+        <div class="header-text">
             <h1>Most Delicious Coffee in town</h1>
             <button>Find out more</button>
         </div>
     </header>
     <section class="best-sellers">
         <h2>Best Sellers</h2>
-        <div class="container">
-            <div class="item card">
+        <div class="container menu-items">
+            <div class="item card menu-item">
                 <img src="images/espresso.jpg" alt="espresso">
                 <div>
                     <h3>Espresso</h3>
                     <p>Classic espresso with the signature crema</p>
                 </div>
             </div>
-            <div class="item card">
+            <div class="item card menu-item">
                 <img src="images/latte-coffee-cup.jpg" alt="espresso">
                 <div>
                     <h3>Capuccino</h3>
                     <p>Espresso with milk with the iconic foam on top</p>
                 </div>
             </div>
-            <div class="item card">
+            <div class="item card menu-item">
                 <img src="images/ice-black-coffee-glass-wooden-table.jpg" alt="espresso">
                 <div>
                     <h3>Americano</h3>
@@ -147,9 +151,5 @@ rel="stylesheet">
         </ul>
     </footer>
 </body>
-<script>
-    const pics = document.querySelectorAll(".review img");
-
-    pics.forEach(p => p.style.height = p.style.width + "px");
-</script>
+<script src="script.js"></script>
 </html>
