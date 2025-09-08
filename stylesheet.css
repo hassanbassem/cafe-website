@@ -138,14 +138,14 @@ h2 {
     min-height: 100%;
 }
 
-.card img {
+.menu-item img {
     min-height: 40%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.card div {
+.menu-item div {
     flex-basis: 40%;
     flex-grow: 1;
 }
@@ -224,7 +224,10 @@ section button {
 }
 
 .review img {
-    width: 20%;
+    width: 10em;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     flex-grow: 1;
     flex-shrink: 1;
     border-radius: 20px 0px 0px 20px;
@@ -262,7 +265,8 @@ section button {
 }
 
 .reverse::after {
-    right: 94%;
+    right: initial;
+    left: 3%;
 }
 
 footer {
@@ -289,7 +293,7 @@ footer li {
     margin: 0.25em;
 }
 
-footer ul:first-of-type li:first-child {
+.address li {
     margin-bottom: 3em;
 }
 
@@ -305,7 +309,7 @@ footer ul:last-child {
     flex-basis: 20%;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 965px) {
     footer {
         flex-direction: column;
     }
@@ -313,6 +317,42 @@ footer ul:last-child {
     iframe {
         width: 100%;
     }
+
+    footer ul:nth-of-type(2){
+        display: flex;
+    }
+
+    footer ul:nth-of-type(2) li{
+        flex-basis: 20%;
+    }
+
+    footer ul:first-of-type {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer ul:first-of-type div{
+        margin-right: 2em;
+    }
+
+    .timings li{
+        margin-bottom: 1em;
+    }
+
+    footer ul:last-child {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer ul:last-child li {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    .social {
+        text-align: center;
+    }
+    
 }
 
 @media (max-width: 650px) {
@@ -404,5 +444,30 @@ footer ul:last-child {
 
     footer ul:nth-of-type(2){
         display: none;
+    }
+
+    footer ul{
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .reviews {
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .review {
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .review img {
+        border-radius: 50%;
     }
 }
