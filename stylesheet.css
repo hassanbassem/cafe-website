@@ -331,26 +331,32 @@ footer ul:last-child {
         justify-content: space-between;
     }
 
-    footer ul:first-of-type div{
-        margin-right: 2em;
-    }
 
     .timings li{
         margin-bottom: 1em;
     }
 
-    footer ul:last-child {
+    footer ul {
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 0;
     }
     
     footer ul:last-child li {
-        flex-basis: 20%;
-        flex-grow: 1;
+        flex-basis: 30%;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
 
     .social {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-basis: content;
+        min-width: 4em;
+        max-width: 5em;
     }
 
     .mobile {
