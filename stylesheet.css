@@ -435,7 +435,7 @@ footer ul:last-child {
     
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
     .menu-items {
         flex-wrap: wrap;
         width: 70%;
