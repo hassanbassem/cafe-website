@@ -13,11 +13,21 @@
     --review-font: "Berkshire Swash", serif;
     --brown: #602817;
     --coffee: #926e4d;
+    --light-coffee: #F6F0EB;
 }
 
 body {
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-family: var(--small-font);
 }
 
 header {
@@ -207,7 +217,7 @@ section button {
 }
 
 .what-our-happy-customers-say {
-    background-color: #F6F0EB;
+    background-color: var(--light-coffee);
 }
 
 .reviews {
