@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    font-size: 1.2rem;
+
+    --big-font: "Jersey 25", sans-serif;
+    --big-font-weight: 400;
+    --small-font: "BenchNine", sans-serif;
+    --review-font: "Berkshire Swash", serif;
+    --brown: #602817;
+    --coffee: #926e4d;
+    --light-coffee: #F6F0EB;
+}
+
+header {
+    background-image: url(images/gallery/man-makes-coffee-coffee-machine.jpg);
+    height: 70vh;
+}
+
+h1 {
+    position: absolute;
+    left: 18%;
+    bottom: 35%;
+}
+
+main {
+    background-color: var(--light-coffee);
+    padding: 5em 0;
+}
+
+main div {
+    width: 70%;
+    margin: auto;
+    column-count: 3;
+    column-gap: 1em;
+}
+
+main img {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 965px) {
+    h1 {
+        color: var(--brown);
+    }
+}
+
+@media (max-width: 750px) {
+    main div {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    main div {
+        column-count: 1;
+    }
+}
