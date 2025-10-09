@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    font-size: 1.2rem;
+
+    --big-font: "Jersey 25", sans-serif;
+    --big-font-weight: 400;
+    --small-font: "BenchNine", sans-serif;
+    --review-font: "Berkshire Swash", serif;
+    --brown: #602817;
+    --coffee: #926e4d;
+    --light-coffee: #F6F0EB;
+}
+
+header {
+    background-image: url(images/barista.jpg);
+    height: 70vh;
+}
+
+h1 {
+    position: absolute;
+    left: 18%;
+    bottom: 35%;
+}
+
+header li {
+    color: var(--brown);
+}
+
+header li:hover {
+    color: #8e6357;
+}
+
+main {
+    background-color: var(--light-coffee);
+    padding: 3em;
+}
+
+h2 {
+    margin-bottom: 1.2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+form {
+    flex-basis: 40%;
+}
+
+.invitation {
+    flex-basis: 40%;
+}
+
+.form-container {
+    padding: 1em;
+    background-color: var(--brown);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--big-font);
+    margin-bottom: 1em;
+}
+
+.form-container div {
+    margin-bottom: 1em;
+}
+
+.form-container div:last-of-type {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+input, textarea {
+    width: 100%;
+    font-family: var(--small-font);
+    font-size: 1.2em;
+    padding: 0.5rem;
+    color: var(--brown);
+    border-radius: 7px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    font-size: 1em;
+}
+
+.invitation img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 965px) {
+    h1 {
+        color: var(--brown);
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    nav li {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.3s ease;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        color: #dac1b0;
+    }
+}
