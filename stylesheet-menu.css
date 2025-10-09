@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    font-size: 1.2rem;
+
+    --big-font: "Jersey 25", sans-serif;
+    --big-font-weight: 400;
+    --small-font: "BenchNine", sans-serif;
+    --review-font: "Berkshire Swash", serif;
+    --brown: #602817;
+    --coffee: #926e4d;
+    --light-coffee: #F6F0EB;
+}
+
+header {
+    background-image: url(images/gallery/top-view-coffee-accessories-table.jpg);
+    height: 70vh;
+}
+
+h1 {
+    position: absolute;
+    left: 18%;
+    bottom: 35%;
+    color: white;
+}
+
+main {
+    padding: 3em;
+    background-color: var(--light-coffee);
+}
+
+main ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-categories {
+    display: flex;
+}
+
+#menu-categories li {
+    /* background-color: var(--brown);
+    color: white; */
+    padding: 1em;
+    /* border-radius: 20px 20px 0 0; */
+    font-family: var(--small-font);
+    cursor: pointer;
+}
+
+.menu-display {
+    background-color: white;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 2em;
+    overflow: visible;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.menu-item img {
+    flex-basis: 50%;
+    border-radius: 20px;
+}
+
+.menu-item h3 {
+    flex-basis: 10%;
+}
+
+.menu-item p {
+    flex-basis: 20%;
+    margin: 0;
+}
+
+.menu-item p:last-of-type {
+    flex-basis: 5%;
+}
+
+.category-selected {
+    background-color: white;
+    color: black;
+    border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 965px) {
+    .menu-container {
+        display: flex;
+        gap: 2em;
+    }
+
+    #menu-categories {
+        flex-direction: column;
+    }
+
+    .category-selected {
+        border-radius: 20px;
+        background-color: var(--brown);
+        color: white;
+    }
+
+    .menu-display {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    #menu-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 1.5em;
+    }
+
+    .menu-display {
+        padding: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+    }
+}
