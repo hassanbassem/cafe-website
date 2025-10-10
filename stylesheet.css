@@ -383,6 +383,7 @@ footer ul:last-child {
 
     header {
         padding: 0;
+        background-attachment: scroll;
     }
 
     nav {
